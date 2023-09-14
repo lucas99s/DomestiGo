@@ -13,16 +13,20 @@
     <link rel="stylesheet" href="~/css/site.css" />
 </head>
 <body>
-    <div>
-    <img src="/domestigo-logo.svg" />
-        <form>
-            <label>Email</label>
-            <input type="email" placeholder="E-mail" />
-            <label>Senha</label>
-            <input type="password" placeholder="Senha" />
-            <input class="button-style" type="button" value="ENTRAR" />
-        </form>
+    <div class="login-logo-section">
+        <img src="/domestigo-logo.svg" />
     </div>
+
+    
+        <form class="login-form-section"> 
+            <label class="hidden-element">Email</label>
+            <input class="login-form-input" type="email" placeholder="E-mail" />
+            <label class="hidden-element">Senha</label>
+            <input class="login-form-input" type="password" placeholder="Senha" />
+            <p class="pwd-recovery">Esqueci minha senha...</p>
+            <input class="login-button-style" type="button" value="ENTRAR" />
+        </form>
+    
 
 </body>
 </html>
