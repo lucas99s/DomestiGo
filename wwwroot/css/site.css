@@ -16,10 +16,6 @@ body{
     align-items: center;
 }
 
-p, a{
-    color: white;
-}
-
 
 .button-style {
     background-color: #6DAF6D;
@@ -92,6 +88,7 @@ p, a{
 
 .button-section p{
     font-size: 20px;
+    color: white;
 }
 
 /* ---TELA DE LOGIN--- */
@@ -105,13 +102,24 @@ p, a{
     width: 100%;
 }
 
+
 .login-form-section {
     align-items: center;
     background-color: #1C195D;
     display: flex;
     flex-direction: column;
-    height: 55vh;
+    padding: 10px;
     width: 100%;
+    height: 600px;
+    
+}
+
+.login-form-field {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    
 }
 
 .login-form-input {
@@ -120,19 +128,20 @@ p, a{
     border-radius: 15px;
     display: flex;
     flex-direction: column;
-    height: 10%;
+    height: 40px;
     margin-bottom: 5%;
     margin-top: 5%;
     padding: 3%;
-    width: 80%;
-   border-style: none;
+    width: 100%;
+    border-style: solid;
+    border-color: #FFFFFF;
 }
 
 .pwd-recovery{
     margin: 0 auto 0 auto;
     padding: 10px;
+    color: white;
 }
-
 
 /*Botão da tela de login*/
 
@@ -156,3 +165,93 @@ p, a{
     }
 
 /* ---TELA DE REGISTRO--- */
+
+.signin-header {
+    align-items: center;
+    background-color: #1C195D;
+    border-radius: 0px 0px 50px 50px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  
+   
+}
+
+.signin-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    width: 100%;
+}
+
+.return-icon {
+    height: 30%;
+    width: auto; 
+    padding-top: 20px;
+}
+
+
+.simple-logo{
+    width: auto;
+    height: 80px;
+}
+
+.signin-logo-text {
+    color: #6DAF6D;
+    font-weight: 500;
+    padding-left: 50px;
+    padding-top: 30px;
+    font-size: 20px;
+  
+}
+
+.signin-text{
+    color: white;
+}
+
+.signin-text-2 {
+    color: black;
+}
+
+.signin-form-section{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.signin-form-field{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-label-style{
+    padding: 15px 0 0px 0;
+    font-weight: 700;
+}
+
+.signin-form-field-style {
+    padding: 10px;
+    border-radius: 20px;
+    border-color: #e2e2e2;
+    border-style: solid;
+}
+
+.signin-button-style {
+    background-color: #1C195D;
+    border-radius: 28px;
+    border-style: none;
+    color: #FFFFFF;
+    font-size: 17px;
+    padding: 16px 31px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #2f6627;
+    text-transform: uppercase;
+    width: 300px;
+    margin: 25px auto 10px auto;
+}
+
+    .signin-button-style:hover {
+        background-color: #6DAF6D;
+        color: #1C195D;
+    }
