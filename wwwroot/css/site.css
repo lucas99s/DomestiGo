@@ -164,6 +164,22 @@ body{
     color: #1C195D;
     }
 
+.login-header {
+    align-items: center;
+    background-color: #1C195D;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.login-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    width: 100%;
+}
+
 /* ---TELA DE REGISTRO--- */
 
 .signin-header {
