@@ -1,4 +1,4 @@
-﻿
+﻿@model DomestiGo.Models.UserModel;
 @{
     Layout = null;
 }
@@ -17,7 +17,9 @@
     <div class="signin-header">
 
         <div class="signin-nav">
-            <img class="return-icon" src="/return-simbol.svg"/>
+            <a class="return-icon" href="~/Account/Index">
+                <img src="/return-simbol.svg"/>
+            </a>
             <p class="signin-logo-text">DomestiGo</p>
             <img class="simple-logo" src="/logo-simple.svg"/>
         </div>
@@ -29,18 +31,31 @@
     <div class="signin-form-section">
         <p class="signin-text-2">Para realizar seu cadastro, preencha os dados abaixo</p>
 
-        <form class="signin-form-field">
+        <form action="/Account/SignIn" method="post" class="signin-form-field">
             <label class="form-label-style">Nome</label>
-            <input class="signin-form-field-style" type="text" placeholder="Informe seu nome" />
+            <input class="signin-form-field-style" type="text" placeholder="Informe seu nome" asp-for="Name" />
+
             <label class="form-label-style">Sobrenome</label>
-            <input class="signin-form-field-style" type="text" placeholder="Informe seu sobrenome" />
+            <input class="signin-form-field-style" type="text" placeholder="Informe seu sobrenome" asp-for="SurName" />
+            
             <label class="form-label-style">E-mail</label>
-            <input class="signin-form-field-style" type="email" placeholder="Informe seu e-mail" />
+            <input class="signin-form-field-style" type="email" placeholder="Informe seu e-mail" asp-for="Email" />
+
+            @if (ViewBag.UserMessage != null)
+            {
+                <span class="text-danger">@ViewBag.UserMessage</span>
+            }
+            
             <label class="form-label-style">Senha</label>
-            <input class="signin-form-field-style" type="password" placeholder="Informe sua senha" />
+            <input class="signin-form-field-style" type="password" placeholder="Informe sua senha" asp-for="Password" />
+
             <label class="form-label-style">Confirmar a senha</label>
-            <input class="signin-form-field-style" type="password" placeholder="Confirme sua senha" />
-            <input class="signin-button-style" type="button" value="Registrar" />
+            <input class="signin-form-field-style" type="password" placeholder="Confirme sua senha" asp-for="PasswordConfirmation" />
+            @if (ViewBag.PasswordMessage != null)
+            {
+                <span class="text-danger">@ViewBag.PasswordMessage</span>
+            }
+            <input class="signin-button-style" type="submit" value="Registrar" />
         </form>
     </div>
 

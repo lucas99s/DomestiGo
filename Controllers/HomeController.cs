@@ -1,4 +1,5 @@
 ﻿using DomestiGo.Models;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
@@ -20,11 +21,15 @@ namespace DomestiGo.Controllers
 
         public IActionResult Index()
         {
-            return View();
-        }
-
-        public IActionResult Privacy()
-        {
+            string user = HttpContext.Session.GetString("UserName");
+            if (user != null)
+            {
+                ViewBag.userName = user;
+            } 
+            else
+            {
+                return RedirectToAction("Login", "Account");
+            }
             return View();
         }
 

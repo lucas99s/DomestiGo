@@ -1,4 +1,4 @@
-﻿
+﻿@model DomestiGo.Models.UserModel;
 @{
     Layout = null;
 }
@@ -13,18 +13,40 @@
     <link rel="stylesheet" href="~/css/site.css" />
 </head>
 <body>
-    <div class="login-logo-section">
-        <img src="/domestigo-logo.svg" />
+    <div class="login-header">
+
+        <div class="login-nav">
+            <a class="return-icon" href="~/Account/Index">
+                <img src="/return-simbol.svg" />
+            </a>
+        </div>
+
     </div>
 
+    @if(ViewBag.NewRegistration != null)
+    {
+        <span class="text-info">@ViewBag.NewRegistration</span>
+    }
+
+    <div class="login-logo-section">
+        <img src="~/domestigo-logo.svg" />
+    </div>
     <div class="login-form-section">
-        <form class="login-form-field"> 
+        <form action="/Account/Login" method="post" class="login-form-field">
             <label class="hidden-element">Email</label>
-            <input class="login-form-input" type="email" placeholder="E-mail" />
+            <input class="login-form-input" type="email" placeholder="E-mail" asp-for="Email" />
+            @if (ViewBag.EmailMessage != null)
+            {
+                <span class="text-danger">@ViewBag.EmailMessage</span>
+            }
             <label class="hidden-element">Senha</label>
-            <input class="login-form-input" type="password" placeholder="Senha" />
+            <input class="login-form-input" type="password" placeholder="Senha" asp-for="Password" />
+            @if (ViewBag.PasswordMessage != null)
+            {
+                <span class="text-danger">@ViewBag.PasswordMessage</span>
+            }
             <p class="pwd-recovery">Esqueci minha senha...</p>
-            <input class="login-button-style" type="button" value="ENTRAR" />
+            <input class="login-button-style" type="submit" value="ENTRAR" />
         </form>
     </div>
 
