@@ -13,18 +13,36 @@
     <link rel="stylesheet" href="~/css/site.css" />
 </head>
 <body>
-    <form>
-        <label>Nome</label>
-        <input type="text" placeholder="Informe seu nome" />
-        <label>Sobrenome</label>
-        <input type="text" placeholder="Informe seu sobrenome" />
-        <label>E-mail</label>
-        <input type="email" placeholder="Informe seu e-mail" />
-        <label>Senha</label>
-        <input type="password" placeholder="Informe sua senha" />
-        <label>Senha</label>
-        <input type="password" placeholder="Confirme sua senha" />
-        <input type="button" value="ENTRAR" />
-    </form>
+
+    <div class="signin-header">
+
+        <div class="signin-nav">
+            <img class="return-icon" src="/return-simbol.svg"/>
+            <p class="signin-logo-text">DomestiGo</p>
+            <img class="simple-logo" src="/logo-simple.svg"/>
+        </div>
+
+        <p class="signin-text">Bem vindo(a)!</p>
+
+    </div>
+
+    <div class="signin-form-section">
+        <p class="signin-text-2">Para realizar seu cadastro, preencha os dados abaixo</p>
+
+        <form class="signin-form-field">
+            <label class="form-label-style">Nome</label>
+            <input class="signin-form-field-style" type="text" placeholder="Informe seu nome" />
+            <label class="form-label-style">Sobrenome</label>
+            <input class="signin-form-field-style" type="text" placeholder="Informe seu sobrenome" />
+            <label class="form-label-style">E-mail</label>
+            <input class="signin-form-field-style" type="email" placeholder="Informe seu e-mail" />
+            <label class="form-label-style">Senha</label>
+            <input class="signin-form-field-style" type="password" placeholder="Informe sua senha" />
+            <label class="form-label-style">Confirmar a senha</label>
+            <input class="signin-form-field-style" type="password" placeholder="Confirme sua senha" />
+            <input class="signin-button-style" type="button" value="Registrar" />
+        </form>
+    </div>
+
 </body>
 </html>
