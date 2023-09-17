@@ -1,0 +1,37 @@
+﻿<div class="app-header">
+    <div class="app-nav">
+        <a class="return-icon" href="~/Home/Index">
+            <img src="~/images/return-simbol.svg"/>
+        </a>
+        <p class="app-logo-text">DomestiGo</p>
+        <img class="simple-logo" src="~/images/logo-simple.svg" />
+    </div>
+    <div class="header-message-2">
+        <div class="initial">
+            @ViewBag.initial
+        </div>
+        <h3>@ViewBag.userName</h3>
+        @*<h1>O que você procura?</h1>*@
+    </div>
+</div>
+<section class="services-container">
+    <div class="menu-option">
+        <h5>Dados pessoais</h5>
+        <img src="~/images/return.png" />
+    </div>
+    <div class="menu-option">
+        <h5>Notificações</h5>
+        <img src="~/images/return.png" />
+    </div>
+    <div class="menu-option">
+        <h5>Pagamentos</h5>
+        <img src="~/images/return.png" />
+    </div>
+    <div class="menu-option">
+        <h5>Conversas</h5>
+        <img src="~/images/return.png" />
+    </div>
+    <a asp-controller="Account" asp-action="Index" class="menu-option">
+        <h5>Sair</h5>
+    </a>
+</section>

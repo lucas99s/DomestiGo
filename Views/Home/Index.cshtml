@@ -3,6 +3,32 @@
 }
 
 <div>
-    <h1>@ViewBag.userName</h1>
-    <h1>DomestiGo</h1>
+    <div class="app-header">
+        <div class="app-nav">
+            <a class="return-icon" href="">
+                <img src="~/images/return-simbol.svg"/>
+            </a>
+            <p class="app-logo-text">DomestiGo</p>
+            <img class="simple-logo" src="~/images/logo-simple.svg"/>
+        </div>
+        <div class="header-message">
+            <h3>Olá, @ViewBag.userName</h3>
+            <h1>O que você procura?</h1>
+        </div>
+    </div>
+    <section class="services-container">
+        <h4>Mais buscados:</h4>
+        <div class="card">
+            <img src="~/images/vazamento.png" />
+            <h3>Hidráulica</h3>
+        </div>
+        <div class="card">
+            <img src="~/images/lampada.png" />
+            <h3>Elétrica</h3>
+        </div>
+        <div class="card">
+            <img src="~/images/esfregar.png" />
+            <h3>Limpeza</h3>
+        </div>
+    </section>
 </div>
