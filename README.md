@@ -8,6 +8,11 @@ Este projeto visa abordar uma das jornadas definidas na primeira parte, abaixo i
 - Executar o codigo através do botão "IIS Express", localizado na parte superior da ferramenta.
 - A aplicação ira ser iniciada no browser.
 
+# Requisitos nescessários para execução
+
+- Instalação do Visual Studio 2022.
+- Versão 7 do SDK.NET (Disponivel em: <https://dotnet.microsoft.com/pt-br/download/visual-studio-sdks>).
+
 # Funcionalidades Implementadas
 
 ### Tela inicial
