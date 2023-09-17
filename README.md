@@ -2,6 +2,12 @@
 
 Este projeto visa abordar uma das jornadas definidas na primeira parte, abaixo iremos, listar as funcionalidades implementadas no protótipo. 
 
+# Intruções para execução da aplicação
+
+- Abrir o arquivo DomestiGo.sln, no Visual Studio.
+- Executar o codigo através do botão "IIS Express", localizado na parte superior da ferramenta.
+- A aplicação ira ser iniciada no browser.
+
 # Funcionalidades Implementadas
 
 ### Tela inicial
