@@ -40,26 +40,33 @@ namespace DomestiGo.Controllers
                 var existingUser = db.Users.FirstOrDefault(u => u.Email == user.Email);
                 if (existingUser == null)
                 {
-                    if (user.Password == user.PasswordConfirmation)
+                    if(user.Password.Length >= 8)
                     {
-
-                        var newUser = new UserDb
+                        if (user.Password == user.PasswordConfirmation)
                         {
-                            Name = user.Name,
-                            SurName = user.SurName,
-                            Email = user.Email,
-                            Password = user.Password
-                        };
 
-                        db.Add(newUser);
-                        db.SaveChanges();
+                            var newUser = new UserDb
+                            {
+                                Name = user.Name,
+                                SurName = user.SurName,
+                                Email = user.Email,
+                                Password = user.Password
+                            };
 
-                        TempData["NewRegistration"] = true;
-                        return RedirectToAction("Login", "Account");
-                    } 
+                            db.Add(newUser);
+                            db.SaveChanges();
+
+                            TempData["NewRegistration"] = true;
+                            return RedirectToAction("Login", "Account");
+                        } 
+                        else
+                        {
+                            ViewBag.PasswordMessage = "Senhas não são iguais!";
+                        }
+                    }
                     else
                     {
-                        ViewBag.PasswordMessage = "Senhas não são iguais!";
+                        ViewBag.PasswordMessage = "Senha deve ter no mínimo 8 dígitos!";
                     }
                 }
                 else

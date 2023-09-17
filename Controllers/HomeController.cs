@@ -33,6 +33,21 @@ namespace DomestiGo.Controllers
             return View();
         }
 
+        public IActionResult Profile()
+        {
+            string user = HttpContext.Session.GetString("UserName");
+            if (user != null)
+            {
+                ViewBag.userName = user;
+                ViewBag.initial = user[0];
+            }
+            else
+            {
+                return RedirectToAction("Login", "Account");
+            }
+            return View();
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
