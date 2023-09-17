@@ -1,31 +1,32 @@
 # Introdução
 
-Este projeto tem como objetivo abordar uma das jornadas definidas na primeira parte, abaixo iremos, listar as funcionalidades implementadas no prototipo. 
+Este projeto visa abordar uma das jornadas definidas na primeira parte, abaixo iremos, listar as funcionalidades implementadas no protótipo. 
 
 # Funcionalidades Implementadas
 
 ### Tela inicial
 
-Através dessa tela duas opções serão habilitadas ao usuario
+Através dessa tela duas opções serão habilitadas ao usuário
 
 - Efetuar o Login através do botão "Entrar"
-- Caso não possua cadastro, o usuario poderá cadastrar um usuário através da opção "Cadastrar".
+- Caso não possua cadastro, o usuário poderá cadastrar um usuário através da opção "Cadastrar".
 
 ### Tela de login
 
-Atráves dessa tela o usuário irá efetuar o acesso a ferramenta, esta tela ira permitir ao usuário.
+Através dessa tela o usuário irá efetuar o acesso à ferramenta, esta tela ira permitir ao usuário.
 
-- Efetuar acesso a ferramenta, informando email e senha cadastrados previamente.
-- Caso o email informado não esteja cadastrado a ferramenta irá alertar que o perfil não existe.
-- Caso a senha informada seja diferente da cadastrada a ferramenta irá alertar que a senha informada é invalida.
+- Efetuar acesso à ferramenta, informando e-mail e senha cadastrados previamente.
+- Caso o e-mail informado não esteja cadastrado, a ferramenta irá alertar que o perfil não existe.
+- Caso a senha informada seja diferente da cadastrada, a ferramenta irá alertar que a senha informada é invalida.
 
 ### Tela de cadastro
 
 Através dessa tela o usuário ira efetuar o cadastro na ferramenta, esta tela possui as seguintes funções.
 
-- Cadastro do usuario informando (Nome, Sobrenome, Email e Senha).
-- Caso o usuario informe um email ja cadastrado a ferramenta irá mostrar um alerta informando o usuário.
-- Caso o usuario coloque uma senha diferente no campo "Confirmar Senha" da senha informada anteriomente a ferramenta irá mostrar um alerta, informando o usuario que a informação esta divergente.
+- Cadastro do usuário informando (Nome, Sobrenome, E-mail e Senha).
+- Caso o usuário informe um e-mail já cadastrado, a ferramenta irá mostrar um alerta informando o usuário.
+- Caso o usuário coloque uma senha diferente no campo "Confirmar Senha" da senha informada anteriormente, a ferramenta irá mostrar um alerta, informando o usuário que a informação esta divergente.
+- A senha informada pelo usuário deve conter no mínimo 8 caracteres, caso esse critério não seja atendido a ferramenta irá mostrar um alerta, informando que a senha não se encaixa no padrão estabelecido.
 
 # Integrantes 
 
