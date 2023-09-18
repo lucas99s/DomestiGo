@@ -1,6 +1,6 @@
 # Introdução
 
-Este projeto visa abordar uma das jornadas definidas na primeira parte, a joranada escolhida aborda o processo de cadastro de um usuario no sistema, demonstrando as funcionalidades da tela de login, cadastro e o processo para o usuário sair da aplicação através da página de perfil. Abaixo iremos listar as funcionalidades implementadas no protótipo. 
+Este projeto visa abordar uma das jornadas definidas na primeira parte, a jornada escolhida aborda o processo de cadastro de um usuario no sistema, demonstrando as funcionalidades da tela de login, cadastro e o processo para o usuário sair da aplicação através da página de perfil. Abaixo iremos listar as funcionalidades implementadas no protótipo. 
 
 # Intruções para execução da aplicação
 
