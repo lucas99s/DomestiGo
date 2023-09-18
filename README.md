@@ -13,6 +13,10 @@ Este projeto visa abordar uma das jornadas definidas na primeira parte, a jornad
 - Instalação do Visual Studio 2022.
 - Versão 7 do SDK.NET (Disponivel em: <https://dotnet.microsoft.com/pt-br/download/visual-studio-sdks>).
 
+# Video Demonstrativo
+
+Link (<https://www.youtube.com/watch?v=Wy7Z5zpUP8s>)
+
 # Funcionalidades Implementadas
 
 ### Tela inicial
